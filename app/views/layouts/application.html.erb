@@ -23,6 +23,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="wrapper">
+      <div><%= link_to "Create a new product", new_product_path %></div>
+      <%= yield %>
+    </div>
   </body>
 </html>

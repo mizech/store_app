@@ -1,6 +1,6 @@
 <h1>All available products</h1>
 <div id="products">
     <% @products.each do |product| %>
-        <div class="list-item"><%= product.name %> - <%= product.price %> €</div>
+        <div class="list-item"><%= product.name %> - <%= product.price %> € <%= link_to "Show", product %></div>
     <% end %>
 </div>
